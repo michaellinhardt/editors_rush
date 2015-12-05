@@ -1,7 +1,6 @@
-:5,8m2
-:ret!
+3Gea<espace><esc>
+20Gf<space>D
+:5,8m2<enter>
+17Gea<space><esc>
 F1
-gg=G
-:%s/le(/le (/
-:%s/k;/k ;/
-:%s/\s\+$//
+=gg
