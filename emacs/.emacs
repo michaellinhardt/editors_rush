@@ -14,7 +14,6 @@
 (add-to-list 'load-path "~/.emacs.d/plugins")
 
 ; autopair.el -> le charge dans tout les buffer (global-mode)
-;(require 'cl-lib)
 (require 'autopair)
 (autopair-global-mode)
 
