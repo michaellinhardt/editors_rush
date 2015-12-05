@@ -1,12 +1,7 @@
-
 ; vrai tabulation au lieux de espace
 (setq-default c-basic-offset 8
 	tab-width 8
 	indent-tabs-mode t)
-
-
-;(add-hook 'c-mode-common-hook '(lambda () (show-trailing-whitespace t))
-(setq-default indicate-empty-lines t)
 
 ; auto retour a la ligne sur certain caractere (accolade compris)
 (add-hook 'c-mode-common-hook '(lambda () (c-toggle-auto-state 1)))
@@ -15,11 +10,6 @@
 (add-hook 'lisp-mode-hook '(lambda ()
 (local-set-key (kbd "RET") 'newline-and-indent)))
 
-; raccourci pour highlight colone curseur (script vline et col-highlight)
-
-; raccourcis clavier
-(global-set-key (kbd "C-x œ") 'global-blank-mode)
-
 ; configure le dossier ou charger les script .el
 (add-to-list 'load-path "/home/nestoyeur/.emacs.d/plugins/")
 
@@ -27,22 +17,16 @@
 (require 'autopair)
 (autopair-global-mode)
 
-; whitespace.el
-;(require 'whitespace)
-;(setq whitespace-style
-;	'(empty lines-tail tabs tab-mark trailing))
-;(add-hook 'global-whitespace-mode-hook)
-
-; highlight-chars.el
-(require 'highlight-chars)
-(require 'blank-mode)
-;(add-hook 'blank-load-hook)
-(setq blank-space 'blank-empty)
-
-; les deux script necessaire pour highlight la colone du curseur
-(require 'vline)
-(require 'col-highlight)
-
 ; active les backup et les enregistrer ~/.emacs.d
 (setq make-backup-files t)
 (setq backup-directory-alist `(("." . "~/.emacs.d")))
+
+; highlight whitespace
+(add-hook 'c-mode-hook
+	(lambda() (highlight-regexp "  " "hi-yellow")
+		))
+(setq show-trailing-whitespace t)
+(setq-default show-trailing-whitespace t)
+
+; affiche numero colone
+(column-number-mode t)
