@@ -16,6 +16,10 @@ void	read_loop(char *delim_string, char **ptr, int op, char **doc)
 		if (!ft_strcmp(delim_string, tmp))
 			break;
         tmp2 = ft_strjoin(*doc, tmp);
+		ff;
+		fff
+			;
+
 		free(*doc);
 		free(tmp);           
 		*doc = tmp2;
