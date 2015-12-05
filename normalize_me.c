@@ -3,7 +3,7 @@ void	read_loop(char *delim_string, char **ptr, int op, char **doc)
 	while(**ptr)
 	{
 		char	*tmp;
-		chat	*tmp2;
+		char	*tmp2;
 
 		tmp = *ptr;
 		while (**ptr && **ptr != '\n')
