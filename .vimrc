@@ -3,6 +3,7 @@ set smartindent
 " set cursorline
 set nocompatible " bug arrow
 set number
+set ruler
 set cc=80
 set backspace=2 " backspace work properly
 set whichwrap+=<,>,[,] " arrow left right change line
