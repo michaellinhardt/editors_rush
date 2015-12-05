@@ -4,6 +4,10 @@
 	tab-width 8
 	indent-tabs-mode t)
 
+
+;(add-hook 'c-mode-common-hook '(lambda () (show-trailing-whitespace t))
+(setq-default indicate-empty-lines t)
+
 ; auto retour a la ligne sur certain caractere (accolade compris)
 (add-hook 'c-mode-common-hook '(lambda () (c-toggle-auto-state 1)))
 
@@ -32,7 +36,8 @@
 ; highlight-chars.el
 (require 'highlight-chars)
 (require 'blank-mode)
-(add-hook 'blank-load-hook)
+;(add-hook 'blank-load-hook)
+(setq blank-space 'blank-empty)
 
 ; les deux script necessaire pour highlight la colone du curseur
 (require 'vline)
