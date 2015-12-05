@@ -24,10 +24,12 @@
 -> hightlight espace en fin de ligne ou sur ligne vide
 	match ErrorMsg '\s\+$'
 -> les inoremap doivent etre apres les set (a la fin) sinon sa ne marche pas
- wef we weg:
-	ef wef wegf  w:wq
-		wefefef
 
-			w;gfojeg i     fe      ewf:wq rgjerg
+_____________________ EMACS _____________________________________
 
-while(gewg)
+-> tab fait des vrai tab
+(setq-default c-basic-offset 8
+	tab-width 8
+	indent-tabs-mode t)
+-> auto retour a la ligne avec certains caractere
+(add-hook 'c-mode-common-hook '(lambda () (c-toggle-auto-state 1)))
