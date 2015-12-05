@@ -11,9 +11,10 @@
 (local-set-key (kbd "RET") 'newline-and-indent)))
 
 ; configure le dossier ou charger les script .el
-(add-to-list 'load-path "/home/nestoyeur/.emacs.d/plugins/")
+(add-to-list 'load-path "~/.emacs.d/plugins")
 
 ; autopair.el -> le charge dans tout les buffer (global-mode)
+;(require 'cl-lib)
 (require 'autopair)
 (autopair-global-mode)
 
