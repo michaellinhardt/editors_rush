@@ -4,3 +4,6 @@
 test.c
 ._*
 emacs/header.el
+\#*
+.\#*
+*.work.c
