@@ -3,3 +3,4 @@
 *.c~
 test.c
 ._*
+emacs/header.el
