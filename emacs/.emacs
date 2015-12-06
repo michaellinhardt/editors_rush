@@ -1,6 +1,6 @@
 ; vrai tabulation au lieux de espace
-(setq-default c-basic-offset 8
-	tab-width 8
+(setq-default c-basic-offset 4
+	tab-width 4
 	indent-tabs-mode t)
 
 ; auto retour a la ligne sur certain caractere (accolade compris)
