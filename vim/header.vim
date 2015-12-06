@@ -60,11 +60,9 @@ function! Update()
 	if l:header && &mod
 		execute("normal 4G5lR".expand("%"))
 		execute("normal 9G5lR"."Updated: ".strftime("%Y/%m/%d %H:%M:%S")." by ".$USER)
-	else
-		echo "No changes"
 	endif
 endfunction
 
 command! Header call Create()
-noremap <c-c><c-h> call Header ()
+noremap <c-c><c-h> :Header<cr>
 autocmd BufWritePre * call Update()
