@@ -1,7 +1,11 @@
 <echap>75<right><space>(s)
 <echap>278<right><space>
-<echap>10<right><tab>
-<echap>56<right>Ck
-<echap>328<left>
+; <echap>10<right><tab>
+; <echap>56<right>Ck
+<echap>66<right>Ck
+<echap>334<left>
 <echap>3Ck
 <echap>18<left>Cy
+<up><up><up><tab><down><tab>
+<echap>91<right><tab>
+<echap>174<right><backspace><tab>
